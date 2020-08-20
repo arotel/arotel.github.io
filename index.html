@@ -11,7 +11,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/41fae1c4eb.js" crossorigin="anonymous"></script>
+<!-- 2. 설치 스크립트 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1597934738168",
+		"key" : "2zq89"
+	}).render();
+</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -77,18 +86,9 @@
 	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
 	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
 -->
-<div id="daumRoughmapContainer1597934738168" class="root_daum_roughmap root_daum_roughmap_landing" style="width:90%;"></div>
+<div id="daumRoughmapContainer1597934738168" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
 
-<!-- 2. 설치 스크립트 -->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1597934738168",
-		"key" : "2zq89"
-	}).render();
-</script>
 								<p>test...</p>
 							</article>
 
