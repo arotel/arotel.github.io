@@ -11,17 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/41fae1c4eb.js" crossorigin="anonymous"></script>
-		<script src="https://www.google.com/recaptcha/api.js?render=6LfFUcIZAAAAAHoj5nHJHrNuh6Y7Rzpwvu6d1GHd"></script>
-		<script>
-			function onClick(e) {
-			  e.preventDefault();
-			  grecaptcha.ready(function() {
-				grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
-					// Add your logic to submit to your backend server here.
-				});
-			  });
-			}
-		</script>
+		<link rel="stylesheet" href="assets/js/jquery-ui-1.12.1/jquery-ui.min.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery-ui-1.12.1/datepicker-ko.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			$(function(){
+				$("#start_date").datepicker();
+				$("#end_date").datepicker();
+			});
+			//]]>
+			</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -107,31 +108,36 @@
 								<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbz0yOgS36bt1-tIqmVag-5OavCx6b3SDxw_GxQT/exec">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<label for="name">이름</label>
+											<input type="text" name="name" id="name" required/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" required/>
+										</div>
+										<div class="field half">
+											<label for="start_date">오는 날</label>
+											<input type="text" name="start_date" id="start_date" required/>
+
+										</div>
+										<div class="field half">
+											<label for="end_date">가는 날</label>
+											<input type="text" name="end_date" id="end_date" required/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="demo-human" name="demo-human" required>
+											<label for="demo-human">로봇이 아니면 체크해주세요.</label>
 										</div>
 									</div>
 									<ul class="actions">
-										<!--<div class="g-recaptcha" data-sitekey="6LeNUcIZAAAAAP0EDSDGVZB7So9TOYGEKVLR6o16"></div>-->
-										<!--<input type="submit" class="g-recaptcha" data-sitekey="6LfFUcIZAAAAAHoj5nHJHrNuh6Y7Rzpwvu6d1GHd" data-callback='onSubmit' data-action='submit'></button>-->
-										<li><input type="submit" value="제출" class="primary" data-action='submit'/></li>
+										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-										</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								</form>
 							</article>
 					</div>
 
