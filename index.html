@@ -11,12 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/41fae1c4eb.js" crossorigin="anonymous"></script>
-		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LfFUcIZAAAAAHoj5nHJHrNuh6Y7Rzpwvu6d1GHd"></script>
 		<script>
-			function onSubmit(token) {
-			  document.getElementById("demo-form").submit();
+			function onClick(e) {
+			  e.preventDefault();
+			  grecaptcha.ready(function() {
+				grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+					// Add your logic to submit to your backend server here.
+				});
+			  });
 			}
-		  </script>
+		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
