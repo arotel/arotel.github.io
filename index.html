@@ -40,7 +40,7 @@
 					<li><a href="#intro">소개</a></li>
 					<li><a href="#rule">이용수칙</a></li>
 					<li><a href="#schedule">이용현황</a></li>
-					<li><a href="#book">예약</a></li>
+					<li><a href="#book">예약하기</a></li>
 					<li><a href="#address">오는길</a></li>
 				</ul>
 			</nav>
@@ -52,15 +52,38 @@
 			<!-- Intro -->
 			<article id="intro">
 				<h2 class="major">소개</h2>
-				<h3 class="major">쪼꼬</h3>
-				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+				<h3>쪼꼬</h3>
+				<pre><code style = " font-size:0.9em;"><span class="image left"><img src="images/pic02.jpg" alt="" /></span>
+ 도도한 애옹님
+ 도도하다가 말았다</code></pre>
 				<!--<p>...<a href="#book"> link test</a></p>-->
-				<h3 class="major">살구</h3>
-				<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-
+				<h3>살구</h3>
+				<pre><code style = " font-size:0.9em;"><span class="image left"><img src="images/pic01.jpg" alt="" /></span>
+ AROTEL의 사고뭉치
+ 지금은 크다. 매우.</code></pre>
+				
 			</article>
 
-			<!-- schedule -->
+			<!-- Rule -->
+			<article id="rule">
+				<h2 class="major">이용수칙</h2>
+				
+					<h3>아이들 보살피기</h3>
+					<pre><code style = " font-size:0.9em;">쪼꼬와 살구의 밥은 하루에 4번 챙겨주세요.
+ - 한마리 당 1회분: 15g
+물은 하루에 4번 갈아주세요.
+ - 정수모드, 250mL
+</code></pre>
+					<h3>주의사항</h3>
+					<pre><code style = " font-size:0.9em;">살구랑 놀아주지 않을 경우 밤에 밟힐 수 있습니다.
+정수기 사용 시 살구가 튀어나올 수 있습니다.
+※ 문제 발생 시 <strong>아영&은빈 모두에게 연락</strong>주시기 바랍니다.</code></pre>
+					
+					<h3>편의시설 안내</h3>
+					<pre><code style = " font-size:0.9em;">WIFI, PS4(User 새로 생성해서 사용), 빔프로젝터, 에어컨</code></pre>
+			</article>
+
+			<!-- Schedule -->
 			<article id="schedule">
 				<h2 class="major">이용현황</h2>
 				<div class="cal-responsive">
@@ -70,7 +93,7 @@
 				</div>
 			</article>
 
-			<!-- address -->
+			<!-- Address -->
 			<article id="address">
 				<h2 class="major">오는길</h2>
 				<div class="map-responsive">
@@ -88,69 +111,57 @@
 				</ul>
 			</article>
 
-			<!-- Contact -->
-			<article id="rule">
-				<h2 class="major">이용수칙</h2>
-
-				<p></p>
-			</article>
-
-			<!-- Contact -->
-			<article id="booked">
-				<h2 class="major">예약이 완료되었습니다.</h2>
-				<p>예약 확정 내용은 카톡으로 안내드리겠습니다. 감사합니다.</p>
-				<p></p>
-			</article>
-
+			<!-- Book -->
 			<article id="book">
-				<h2 class="major">약속잡기</h2>
+				<h2 class="major">예약하기</h2>
 
 				<form class="gform" method="POST" data-email="aykim3428@gmail.com"
-				action="https://script.google.com/macros/s/AKfycbwNnqSBc7MpHKS9W87mhWvtSxPuQSrWVRT9S0zN2l6h7PIVKEE/exec">
-				  <!-- change the form action to your script url -->
-			  
-				  <div class="form-elements">
-					<fieldset class="form-elements half" style="display:none;">
-						<!--input 태그의 id는 honeypot 등 실제 작동하지 않는 id여야 합니다-->
-						<label class="sr-only">Keep this field blank</label>
-						<input id="honeypot" type="text" name="honeypot" value="" />
-					</fieldset>
-					<fieldset class="form-elements half">
-					  <label for="name">이름</label>
-					  <input id="name" name="name" type="text" required/>
-					</fieldset>
-					<fieldset class="form-elements half">
-						<label for="num">인원</label>
-						<select name="num" id="num">
-							<option value="">-</option>
-							<option value="1">혼자 방문합니다.</option>
-							<option value="2">2명이 방문합니다.</option>
-							<option value="3">3명이 방문합니다.</option>
-							<option value="4">4명이 방문합니다.</option>
-						</select>
-						<!--<input name="num" id="num"  type="text" required />-->
-					</fieldset>
-					<fieldset class="form-elements half">
-						<label for="startDate">오는 날</label>
-						<input type="date" name="startDate" id="startDate"  min="2009-11-06" max="9999-12-31" required />
-					</fieldset>
-					<fieldset class="form-elements half">
-						<label for="endDate">가는 날</label>
-						<input type="date" name="endDate" id="endDate" min="2009-11-06" max="9999-12-31" required />
-					</fieldset>
-					<fieldset class="form-elements">
-						<label for="message">메모</label>
-						<textarea name="message" id="message" rows="4"></textarea>
-					</fieldset>
-					<fieldset class="form-elements">
-					<button><b>Send</b></button></fieldset>
-				  </div>			
-				  <!-- Customise the Thankyou Message People See when they submit the form: -->
-				  <div class="thankyou_message" style="display:none;">
-					<h2>AROTEL에 방문해주셔서 감사합니다!
-					  카카오톡을 통해 연락드리겠습니다.</h2>
-				  </div>
-			  
+					action="https://script.google.com/macros/s/AKfycbwNnqSBc7MpHKS9W87mhWvtSxPuQSrWVRT9S0zN2l6h7PIVKEE/exec">
+					<!-- change the form action to your script url -->
+
+					<div class="form-elements">
+						<fieldset class="form-elements half" style="display:none;">
+							<!--input 태그의 id는 honeypot 등 실제 작동하지 않는 id여야 합니다-->
+							<label class="sr-only">Keep this field blank</label>
+							<input id="honeypot" type="text" name="honeypot" value="" />
+						</fieldset>
+						<fieldset class="form-elements half">
+							<label for="name">이름</label>
+							<input id="name" name="name" type="text" required />
+						</fieldset>
+						<fieldset class="form-elements half">
+							<label for="num">인원</label>
+							<select name="num" id="num">
+								<option value="">-</option>
+								<option value="1">혼자 방문합니다.</option>
+								<option value="2">2명이 방문합니다.</option>
+								<option value="3">3명이 방문합니다.</option>
+								<option value="4">4명이 방문합니다.</option>
+							</select>
+							<!--<input name="num" id="num"  type="text" required />-->
+						</fieldset>
+						<fieldset class="form-elements half">
+							<label for="startDate">오는 날</label>
+							<input type="date" name="startDate" id="startDate" min="2009-11-06" max="9999-12-31"
+								required />
+						</fieldset>
+						<fieldset class="form-elements half">
+							<label for="endDate">가는 날</label>
+							<input type="date" name="endDate" id="endDate" min="2009-11-06" max="9999-12-31" required />
+						</fieldset>
+						<fieldset class="form-elements">
+							<label for="message">메모</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</fieldset>
+						<fieldset class="form-elements">
+							<button><b>Send</b></button></fieldset>
+					</div>
+					<!-- Customise the Thankyou Message People See when they submit the form: -->
+					<div class="thankyou_message" style="display:none;">
+						<h2>AROTEL 방문을 환영합니다!
+							카카오톡을 통해 연락드리겠습니다.</h2>
+					</div>
+
 				</form>
 			</article>
 		</div>
