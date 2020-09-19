@@ -1589,40 +1589,4 @@ form {
 				padding-bottom: 1em;
 			}
 
-		@media screen and (max-width: 980px) {
-
-			#footer {
-				position: relative;
-				bottom: 0;
-			}
-
-				#footer .inner {
-					height: auto;
-					display: block;
-				}
-
-					#footer .inner .content,
-					#footer .inner .copyright {
-						display: block;
-						width: 100%;
-						text-align: center;
-					}
-
-				#footer .info {
-					display: flexbox;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#footer .inner {
-				padding: 2em;
-			}
-
-				#footer .inner .content,
-				#footer .inner .copyright {
-					padding: 1em;
-				}
-
-		}
+	
