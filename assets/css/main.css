@@ -1476,10 +1476,11 @@ form {
 			position:absolute;
 		}
 		.cal-responsive{
-			overflow:hidden;
+			overflow:auto;
 			padding-bottom:120%;
 			position:relative;
 			height:0;
+			-ms-overflow-style: none;
 		}
 		.cal-responsive iframe{
 			left:0;
@@ -1488,6 +1489,7 @@ form {
 			width:100%;
 			position:absolute;
 		}
+		.cal-responsive::-webkit-scrollbar{ display:none; }
 		
 /* Footer */
 
@@ -1607,7 +1609,7 @@ form {
 					}
 
 				#footer .info {
-					display: none;
+					display: flexbox;
 				}
 
 		}
