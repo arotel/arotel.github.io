@@ -219,7 +219,7 @@
 	code {
 		border-radius: 4px;
 		border: solid 1px;
-		font-family: "Courier New", monospace;
+		font-family: 'Cafe24Oneprettynight';
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -227,7 +227,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'Cafe24Oneprettynight';
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -1476,11 +1476,9 @@ form {
 			position:absolute;
 		}
 		.cal-responsive{
-			overflow:auto;
 			padding-bottom:120%;
 			position:relative;
 			height:0;
-			-ms-overflow-style: none;
 		}
 		.cal-responsive iframe{
 			left:0;
@@ -1489,7 +1487,6 @@ form {
 			width:100%;
 			position:absolute;
 		}
-		.cal-responsive::-webkit-scrollbar{ display:none; }
 		
 /* Footer */
 
@@ -1588,5 +1585,3 @@ form {
 				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 				padding-bottom: 1em;
 			}
-
-	
