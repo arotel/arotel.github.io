@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>AROTEL, cosy place for friends.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="preview">
+		<div class="inner">
+			<div class="content">
+
+			</div>
+			<a href="index.html" class="button hidden"><span>Let's Go</span></a>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="preview">
+		<div class="inner">
+
+			<div class="content cal-responsive ">
+				<header>
+					<h2>예 약 하 기</h2>
+				</header>
+				<p>
+				</p>
+				<div class="box">
+
+					<form class="gform" method="POST" data-email="aykim3428@gmail.com"
+						action="https://script.google.com/macros/s/AKfycbwNnqSBc7MpHKS9W87mhWvtSxPuQSrWVRT9S0zN2l6h7PIVKEE/exec">
+						<!-- change the form action to your script url -->
+
+						<div class="form-elements">
+							<fieldset class="form-elements half" style="display:none;">
+								<!--input 태그의 id는 honeypot 등 실제 작동하지 않는 id여야 합니다-->
+								<label class="sr-only">Keep this field blank</label>
+								<input id="honeypot" type="text" name="honeypot" value="" />
+							</fieldset>
+							<fieldset class="form-elements half">
+								<label for="name">이름</label>
+								<input id="name" name="name" type="text" required />
+							</fieldset>
+							<fieldset class="form-elements half">
+								<label for="num">인원</label>
+								<select name="num" id="num">
+									<option value="">-</option>
+									<option value="1">혼자 방문합니다.</option>
+									<option value="2">2명이 방문합니다.</option>
+									<option value="3">3명이 방문합니다.</option>
+									<option value="4">4명이 방문합니다.</option>
+								</select>
+								<!--<input name="num" id="num"  type="text" required />-->
+							</fieldset>
+							<fieldset class="form-elements half">
+								<label for="startDate">오는 날</label>
+								<input type="date" name="startDate" id="startDate" required />
+							</fieldset>
+							<fieldset class="form-elements half">
+								<label for="endDate">가는 날</label>
+								<input type="date" name="endDate" id="endDate" required />
+							</fieldset>
+							<fieldset class="form-elements">
+								<label for="message">메모</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</fieldset>
+							</br>
+							<fieldset class="form-elements">
+								<button><b>Send</b></button></fieldset>
+						</div>
+						<!-- Customise the Thankyou Message People See when they submit the form: -->
+						<div class="thankyou_message" style="display:none;">
+							<h2>AROTEL 방문을 환영합니다!</br>
+								카카오톡을 통해 연락드리겠습니다.</h2>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<a href="#" class="info fa fa-info-circle"><span></span></a>
+		<div class="inner">
+			<div class="copyright">
+				<ul class="icons">
+					<li><a href="rules.html" class="icon fa-bell"><span class="label">Rules</span></a></li>
+					<li><a href="calender.html" class="icon fa-calendar"><span class="label">Calender</span></a></li>
+					<li><a href="book.html" class="icon fa-calendar-check-o"><span class="label">Book</span></a></li>
+					<li><a href="map.html" class="icon fa-map-marker"><span class="label">Map</span></a></li>
+				</ul>
+				Copyright by A-Young. Design by TEMPLATED.
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- Submit the Form to Google Using "AJAX" -->
+	<script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
+	<script>
+		var today = new Date().toISOString().split('T')[0];
+		startDate.min= today;
+		endDate.min= today;
+	</script>
+
+</body>
+
+</html>

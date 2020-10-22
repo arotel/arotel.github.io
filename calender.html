@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>AROTEL, cosy place for friends.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel='stylesheet' href='assets/css/fullcalendar.css' />
+	<script src='assets/js/fullcalendar.js'></script>
+</head>
+<script>
+
+	document.addEventListener('DOMContentLoaded', function () {
+		var calendarEl = document.getElementById('calendar');
+
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+
+			headerToolbar: {
+				right: 'next',
+				left: 'prev',
+				center: 'title'//'dayGridMonth,listYear'
+			},
+
+			displayEventTime: false, // don't show the time column in list view
+
+			// THIS KEY WON'T WORK IN PRODUCTION!!!
+			// To make your own Google API key, follow the directions here:
+			// http://fullcalendar.io/docs/google_calendar/
+			googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+
+
+			eventSources: [
+				{
+					googleCalendarId: 'ncbhnboinfch6rfgb4deiu0vv8@group.calendar.google.com'
+				},
+				{
+					googleCalendarId: 'ko.south_korea#holiday@group.v.calendar.google.com',
+					className: 'nice-event'
+				}
+			]
+
+		});
+
+		calendar.render();
+	});
+
+</script>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="preview">
+		<div class="inner ">
+			<div class="content">
+
+			</div>
+			<a href="index.html" class="button hidden"><span>Let's Go</span></a>
+		</div>
+	</header>
+
+
+	<!-- Main -->
+	<div id="preview">
+		<div class="inner box">
+			<div class="content">
+				<header>
+					<h2>이 용 현 황</h2>
+				</header>
+				
+			<div id='calendar'></div>
+			</div>
+			
+		</div>
+
+	</div>
+	<!-- Footer -->
+	<footer id="footer">
+		<a href="#" class="info fa fa-info-circle"><span>About</span></a>
+		<div class="inner">
+			<div class="copyright">
+				<ul class="icons">
+					<li><a href="rules.html" class="icon fa-bell"><span class="label">Rules</span></a></li>
+					<li><a href="calender.html" class="icon fa-calendar"><span class="label">Calender</span></a></li>
+					<li><a href="book.html" class="icon fa-calendar-check-o"><span class="label">Book</span></a></li>
+					<li><a href="map.html" class="icon fa-map-marker"><span class="label">Map</span></a></li>
+				</ul>
+				Copyright by A-Young. Design by TEMPLATED.
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
